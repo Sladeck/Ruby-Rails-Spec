@@ -1,0 +1,68 @@
+<!DOCTYPE html><html><head>
+    <title>Gazooyr</title>
+    
+
+    <link rel="stylesheet" media="all" href="/assets/application-874f798e7c29591f5232ea0878997aeff584b40cd69c7adfbb5805e68532e4e3.css" data-turbolinks-track="reload">
+    <script src="/assets/application-8e47ef9c8b73014f358ad279680593803369aadaac299388445686bb1e5ee6f4.js" data-turbolinks-track="reload"></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/">Gazooyr</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse container">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="/">Accueil <span class="sr-only">(current)</span></a></li>
+                <li><a href="/posts">Posts</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/users/sign_in">Login</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <h2>Log in</h2>
+
+<form class="new_user" id="new_user" action="/users/sign_in" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓">
+  <div class="field">
+    <label for="user_username">Username</label><br>
+    <input type="text" name="user[username]" id="user_username">
+  </div>
+
+  <div class="field">
+    <label for="user_password">Password</label><br>
+    <input autocomplete="off" type="password" name="user[password]" id="user_password">
+  </div>
+
+    <div class="field">
+      <input name="user[remember_me]" type="hidden" value="0"><input type="checkbox" value="1" name="user[remember_me]" id="user_remember_me">
+      <label for="user_remember_me">Remember me</label>
+    </div>
+
+  <div class="actions">
+    <input type="submit" name="commit" value="Log in" data-disable-with="Log in">
+  </div>
+</form>
+
+  <a href="/users/sign_up">Sign up</a><br>
+
+  <a href="/users/password/new">Forgot your password?</a><br>
+
+
+
+
+
+  
+
+</body></html>
